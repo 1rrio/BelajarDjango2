@@ -4,7 +4,7 @@ from django.contrib.auth.models import AbstractUser
 
 #ini class supayabisa migrate gr gr auth user
 class User(AbstractUser):
-    pass  
+    is_waitress = models.BooleanField(default=False)
 
 class TableResto(models.Model):
     status_choices = (

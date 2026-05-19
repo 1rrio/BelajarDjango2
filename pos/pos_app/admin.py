@@ -1,8 +1,15 @@
 from django.contrib import admin
 from pos_app.models import User, TableResto, StatusModel,Category,MenuResto
-# Register your models here.
-admin.site.register(User)
-admin.site.register(TableResto)
-admin.site.register(StatusModel)
-admin.site.register(Category)
-admin.site.register(MenuResto)
+from import_export.admin import ImportExportModelAdmin
+
+@admin.register(StatusModel)
+class StatusAdmin(ImportExportModelAdmin):
+    pass
+
+@admin.register(Category)
+class CategoryAdmin(ImportExportModelAdmin):
+    pass
+
+@admin.register(MenuResto)
+class MenuAdmin(ImportExportModelAdmin):
+    pass
