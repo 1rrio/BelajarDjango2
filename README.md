@@ -1,3 +1,3 @@
 # BelajarDjango2
-Latihan Django Sesuai Modul,
-Model Profile, OrderMenu dan OrderMenuDetail tidak ada di modul
+Latihan Django Sesuai Modul dan tambahin import export
+
